@@ -19,7 +19,7 @@
 
 ### 요청 예시
 ```http request
-GET /api/hosts/{id} HTTP/1.1
+GET /api/hosts/1 HTTP/1.1
 Host: localhost
 Accept: "application/hal+json"
 
@@ -52,7 +52,7 @@ Content-Type:"application/hal+json;charset=UTF-8"
     "address":"210.114.6.150",
     "createdDateTime":"2021-12-14T23:21:23.831437",
     "lastModifiedDateTime":"2021-12-14T23:21:23.831437",
-    "lastAliveDateTime":null,
+    "lastAliveDateTime":2021-12-14T23:21:23.231456,
     "_links":{
         "self":{
             "href":"http://localhost/api/hosts/1"
@@ -107,7 +107,7 @@ Content-Type:"application/hal+json;charset=UTF-8"
     "address":"210.114.6.150",
     "createdDateTime":"2021-12-14T23:21:23.831437",
     "lastModifiedDateTime":"2021-12-14T23:21:23.831437",
-    "lastAliveDateTime":null,
+    "lastAliveDateTime":2021-12-14T23:21:30.476521,
     "_links":{
         "self":{
             "href":"http://localhost/api/hosts/1"
@@ -127,7 +127,7 @@ Content-Type:"application/hal+json;charset=UTF-8"
 
 ### 요청 예시
 ```http request
-PUT /api/hosts/{id} HTTP/1.1
+PUT /api/hosts/1 HTTP/1.1
 Host: localhost
 Content-Type:"application/hal+json;charset=UTF-8"
 Accept: "application/hal+json"
@@ -160,9 +160,9 @@ Content-Type:"application/hal+json;charset=UTF-8"
     "id":1,
     "name":"google.com",
     "address":"142.250.207.14",
-    "createdDateTime":null,
-    "lastModifiedDateTime":null,
-    "lastAliveDateTime":null,
+    "createdDateTime":2021-12-14T23:21:23.831437,
+    "lastModifiedDateTime":2021-12-14T23:21:23.831437,
+    "lastAliveDateTime":2021-12-14T23:21:40.213437,
         "_links":{
             "self":{
                 "href":"http://localhost/api/hosts/1"
@@ -181,7 +181,7 @@ Content-Type:"application/hal+json;charset=UTF-8"
 
 ### 요청 예시
 ```http request
-DELETE /api/hosts/{id} HTTP/1.1
+DELETE /api/hosts/1 HTTP/1.1
 Host: localhost
 Accept: "application/hal+json"
 ```
