@@ -25,7 +25,7 @@ Accept: "application/hal+json"
 
 {
     "name":"atto-research.com",
-    "address":"210.114.6.150",
+    "address":"210.114.6.150"
 }
 ```
 
@@ -52,7 +52,7 @@ Content-Type:"application/hal+json;charset=UTF-8"
     "address":"210.114.6.150",
     "createdDateTime":"2021-12-14T23:21:23.831437",
     "lastModifiedDateTime":"2021-12-14T23:21:23.831437",
-    "lastAliveDateTime":2021-12-14T23:21:23.231456,
+    "lastAliveDateTime":"2021-12-14T23:21:23.231456",
     "_links":{
         "self":{
             "href":"http://localhost/api/hosts/1"
@@ -107,7 +107,7 @@ Content-Type:"application/hal+json;charset=UTF-8"
     "address":"210.114.6.150",
     "createdDateTime":"2021-12-14T23:21:23.831437",
     "lastModifiedDateTime":"2021-12-14T23:21:23.831437",
-    "lastAliveDateTime":2021-12-14T23:21:30.476521,
+    "lastAliveDateTime":"2021-12-14T23:21:30.476521",
     "_links":{
         "self":{
             "href":"http://localhost/api/hosts/1"
@@ -148,7 +148,7 @@ Content-Length: 48
 | createdDateTime      | String | 호스트의 생성된 시간          |
 | lastModifiedDateTime | String | 호스트의 마지막 수정 시간       |
 | lastAliveDateTime    | String | 호스트의 마지막 Alive 확인 시간 |
-| _links.self.href     | String | 생성된 호스트의 정보 조회 링크    |
+| _links.self.href     | String | 호스트의 정보 조회 링크    |
 
 ### 응답 예시
 ```http request
@@ -160,9 +160,9 @@ Content-Type:"application/hal+json;charset=UTF-8"
     "id":1,
     "name":"google.com",
     "address":"142.250.207.14",
-    "createdDateTime":2021-12-14T23:21:23.831437,
-    "lastModifiedDateTime":2021-12-14T23:21:23.831437,
-    "lastAliveDateTime":2021-12-14T23:21:40.213437,
+    "createdDateTime":"2021-12-14T23:21:23.831437",
+    "lastModifiedDateTime":"2021-12-14T23:21:23.831437",
+    "lastAliveDateTime":"2021-12-14T23:21:40.213437",
         "_links":{
             "self":{
                 "href":"http://localhost/api/hosts/1"
