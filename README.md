@@ -41,10 +41,10 @@ Accept: "application/hal+json"
 | _links.self.href     | String | 생성된 호스트의 정보 조회 링크    |
 
 ### 응답 예시
-```http request
+```http response
 HTTP/1.1 201 Created
 Location: "http://localhost/api/hosts/1"
-Content-Type:"application/hal+json;charset=UTF-8"
+Content-Type: "application/hal+json;charset=UTF-8"
 
 {
     "id":1,
@@ -96,10 +96,10 @@ Content-Length: 54
 | _links.self.href     | String | 생성된 호스트의 정보 조회 링크    |
 
 ### 응답 예시
-```http request
+```http response
 HTTP/1.1 201 Created
 Location: "http://localhost/api/hosts/1"
-Content-Type:"application/hal+json;charset=UTF-8"
+Content-Type: "application/hal+json;charset=UTF-8"
 
 {
     "id":1,
@@ -151,10 +151,10 @@ Content-Length: 48
 | _links.self.href     | String | 호스트의 정보 조회 링크    |
 
 ### 응답 예시
-```http request
+```http response
 HTTP/1.1 200 Ok
 Location: "http://localhost/api/hosts/1"
-Content-Type:"application/hal+json;charset=UTF-8"
+Content-Type: "application/hal+json;charset=UTF-8"
 
 {
     "id":1,
@@ -187,6 +187,6 @@ Accept: "application/hal+json"
 ```
 
 ### 응답 예시
-```http request
+```http response
 HTTP/1.1 204 No Content
 ```
