@@ -13,13 +13,13 @@
 **GET** 메소드를 사용하여 호스트를 조회할 수 있다.
 
 ### 요청 필드
-| 필드 명    |데이터 타입| 설명       |필수 여부|
-|---------|--|----------|:---:|
-| id      |Number| 호스트의 아이디 |O|
+| 필드 명 | 데이터 타입 | 설명       |필수 여부|
+|------|--------|----------|:---:|
+| id   | Number | 호스트의 아이디 |O|
 
 ### 요청 예시
 ```http request
-GET /api/hosts{id} HTTP/1.1
+GET /api/hosts/{id} HTTP/1.1
 Host: localhost
 Accept: "application/hal+json"
 
@@ -55,7 +55,7 @@ Content-Type:"application/hal+json;charset=UTF-8"
     "lastAliveDateTime":null,
     "_links":{
         "self":{
-            "href":"http://localhost/api/hosts/6"
+            "href":"http://localhost/api/hosts/1"
             }
     }
 }
@@ -80,7 +80,7 @@ Content-Length: 54
 
 {
     "name":"atto-research.com",
-    "address":"210.114.6.150",
+    "address":"210.114.6.150"
 }
 ```
 
@@ -110,7 +110,7 @@ Content-Type:"application/hal+json;charset=UTF-8"
     "lastAliveDateTime":null,
     "_links":{
         "self":{
-            "href":"http://localhost/api/hosts/6"
+            "href":"http://localhost/api/hosts/1"
             }
     }
 }
@@ -127,7 +127,7 @@ Content-Type:"application/hal+json;charset=UTF-8"
 
 ### 요청 예시
 ```http request
-PUT /api/hosts HTTP/1.1
+PUT /api/hosts/{id} HTTP/1.1
 Host: localhost
 Content-Type:"application/hal+json;charset=UTF-8"
 Accept: "application/hal+json"
@@ -135,7 +135,7 @@ Content-Length: 48
 
 {
     "name":"google.com",
-    "address":"142.250.207.14",
+    "address":"142.250.207.14"
 }
 ```
 
@@ -175,13 +175,13 @@ Content-Type:"application/hal+json;charset=UTF-8"
 **DELETE** 메소드를 사용하여 호스트를 삭제할 수 있다.
 
 ### 요청 필드
-| 필드 명    |데이터 타입| 설명       |필수 여부|
-|---------|--|----------|:---:|
-| id      |Number| 호스트의 아이디 |O|
+| 필드 명    |데이터 타입| 설명         |필수 여부|
+|---------|---|------------|:---:|
+| name    |String| 호스트의 이름    |O|
 
 ### 요청 예시
 ```http request
-DELETE /api/hosts{id} HTTP/1.1
+DELETE /api/hosts/{id} HTTP/1.1
 Host: localhost
 Accept: "application/hal+json"
 ```
